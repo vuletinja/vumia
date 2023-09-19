@@ -4,11 +4,17 @@
     import Scene from './Scene.svelte'
   </script>
 
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
-
-<div class="grid place-content-center h-96">
-    <Canvas>
-        <Scene />
-    </Canvas>
-</div>
+<div class="hero min-h-screen bg-base-200">
+    <div class="hero-content flex-col lg:flex-row-reverse">
+        <div class="basis-2/4 h-96 ">
+            <Canvas>
+                <Scene />
+            </Canvas>
+        </div>
+      <div>
+        <h1 class="text-5xl font-bold">Find parts in 3D</h1>
+        <p class="py-6">It's easy to find parts when using our solution</p>
+        <button class="btn btn-primary">Become a partner</button>
+      </div>
+    </div>
+  </div>
